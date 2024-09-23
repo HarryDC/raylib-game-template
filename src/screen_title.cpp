@@ -37,7 +37,7 @@ static int finishScreen = 0;
 //----------------------------------------------------------------------------------
 
 // Title Screen Initialization logic
-void InitTitleScreen(void)
+void init_title_screen(void)
 {
     // TODO: Initialize TITLE screen variables here!
     framesCounter = 0;
@@ -45,7 +45,7 @@ void InitTitleScreen(void)
 }
 
 // Title Screen Update logic
-void UpdateTitleScreen(void)
+void update_title_screen(void)
 {
     // TODO: Update TITLE screen variables here!
 
@@ -59,7 +59,7 @@ void UpdateTitleScreen(void)
 }
 
 // Title Screen Draw logic
-void DrawTitleScreen(void)
+void draw_title_screen(void)
 {
     // TODO: Draw TITLE screen here!
     DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), GREEN);
@@ -69,13 +69,13 @@ void DrawTitleScreen(void)
 }
 
 // Title Screen Unload logic
-void UnloadTitleScreen(void)
+void unload_title_screen(void)
 {
     // TODO: Unload TITLE screen variables here!
 }
 
 // Title Screen should finish?
-int FinishTitleScreen(void)
+int finish_title_screen(void)
 {
     return finishScreen;
 }

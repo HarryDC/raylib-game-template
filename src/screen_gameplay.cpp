@@ -37,7 +37,7 @@ static int finishScreen = 0;
 //----------------------------------------------------------------------------------
 
 // Gameplay Screen Initialization logic
-void InitGameplayScreen(void)
+void init_gameplay_screen(void)
 {
     // TODO: Initialize GAMEPLAY screen variables here!
     framesCounter = 0;
@@ -45,7 +45,7 @@ void InitGameplayScreen(void)
 }
 
 // Gameplay Screen Update logic
-void UpdateGameplayScreen(void)
+void update_gameplay_screen(void)
 {
     // TODO: Update GAMEPLAY screen variables here!
 
@@ -58,7 +58,7 @@ void UpdateGameplayScreen(void)
 }
 
 // Gameplay Screen Draw logic
-void DrawGameplayScreen(void)
+void draw_gameplay_screen(void)
 {
     // TODO: Draw GAMEPLAY screen here!
     DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), PURPLE);
@@ -68,13 +68,13 @@ void DrawGameplayScreen(void)
 }
 
 // Gameplay Screen Unload logic
-void UnloadGameplayScreen(void)
+void unload_gameplay_screen(void)
 {
     // TODO: Unload GAMEPLAY screen variables here!
 }
 
 // Gameplay Screen should finish?
-int FinishGameplayScreen(void)
+int finish_gameplay_screen(void)
 {
     return finishScreen;
 }

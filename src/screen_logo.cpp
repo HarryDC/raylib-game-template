@@ -51,7 +51,7 @@ static float alpha = 1.0f;         // Useful for fading
 //----------------------------------------------------------------------------------
 
 // Logo Screen Initialization logic
-void InitLogoScreen(void)
+void init_logo_screen(void)
 {
     finishScreen = 0;
     framesCounter = 0;
@@ -70,7 +70,7 @@ void InitLogoScreen(void)
 }
 
 // Logo Screen Update logic
-void UpdateLogoScreen(void)
+void update_logo_screen(void)
 {
     if (state == 0)                 // State 0: Top-left square corner blink logic
     {
@@ -125,7 +125,7 @@ void UpdateLogoScreen(void)
 }
 
 // Logo Screen Draw logic
-void DrawLogoScreen(void)
+void draw_logo_screen(void)
 {
     if (state == 0)         // Draw blinking top-left square corner
     {
@@ -161,13 +161,13 @@ void DrawLogoScreen(void)
 }
 
 // Logo Screen Unload logic
-void UnloadLogoScreen(void)
+void unload_logo_screen(void)
 {
     // Unload LOGO screen variables here!
 }
 
 // Logo Screen should finish?
-int FinishLogoScreen(void)
+int finish_logo_screen(void)
 {
     return finishScreen;
 }

@@ -37,7 +37,7 @@ static int finishScreen = 0;
 //----------------------------------------------------------------------------------
 
 // Options Screen Initialization logic
-void InitOptionsScreen(void)
+void init_options_screen(void)
 {
     // TODO: Initialize OPTIONS screen variables here!
     framesCounter = 0;
@@ -45,25 +45,25 @@ void InitOptionsScreen(void)
 }
 
 // Options Screen Update logic
-void UpdateOptionsScreen(void)
+void update_options_screen(void)
 {
     // TODO: Update OPTIONS screen variables here!
 }
 
 // Options Screen Draw logic
-void DrawOptionsScreen(void)
+void draw_options_screen(void)
 {
     // TODO: Draw OPTIONS screen here!
 }
 
 // Options Screen Unload logic
-void UnloadOptionsScreen(void)
+void unload_options_screen(void)
 {
     // TODO: Unload OPTIONS screen variables here!
 }
 
 // Options Screen should finish?
-int FinishOptionsScreen(void)
+int finish_options_screen(void)
 {
     return finishScreen;
 }
